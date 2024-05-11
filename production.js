@@ -1,5 +1,5 @@
 module.exports.loop = function () {
-    // Получить список всех ваших юнитов
+    
     const creeps = Game.creeps;
 
     // Пройтись по каждому юниту
