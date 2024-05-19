@@ -9,6 +9,11 @@ function repairUnits(creep) {
             return;
         }
 
+        // Ремонт цели
+        if (creep.repair(target) === ERR_NOT_IN_RANGE) {
+            // Перемещение к цели, если она не в радиусе действия
+            creep.moveTo(target);
+        }
       
     }
 }
